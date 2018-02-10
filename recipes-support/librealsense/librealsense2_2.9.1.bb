@@ -10,7 +10,7 @@ export HOST_SYS
 
 require librealsense.inc
 
-DEPENDS += "x11 opengl libpng libglu glfw gtk+3"
+DEPENDS += "${@bb.utils.contains('DISTRO_FEATURES', 'x11 opengl', 'libpng libglu glfw gtk+3', '', d)}"
 
 SRC_URI = "\
 	git://github.com/IntelRealSense/librealsense.git;tag=v${PV} \

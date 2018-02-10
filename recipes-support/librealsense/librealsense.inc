@@ -5,6 +5,7 @@ LICENSE = "Apache-2.0"
 DEPENDS = "\
     udev \
     libusb1 \
+    gtk+3 \
 "
 
 RDEPENDS_${PN} = "bash"
