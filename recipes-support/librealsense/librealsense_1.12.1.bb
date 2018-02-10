@@ -3,7 +3,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=3b83ef96387f14655fc854ddc3c6bd57"
 
 require librealsense.inc
 
-DEPENDS += "${@bb.utils.contains('DISTRO_FEATURES', 'x11 opengl', 'libpng libglu glfw', '', d)}"
+DEPENDS += "x11 opengl libpng libglu glfw"
 
 SRC_URI = "\
 	git://github.com/IntelRealSense/librealsense.git;branch=legacy \
