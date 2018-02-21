@@ -1,3 +1,4 @@
+inherit kernel-resin deploy
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 SRC_URI += "file://uvc.cfg"
